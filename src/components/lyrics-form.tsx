@@ -37,7 +37,10 @@ export default function LyricsForm() {
 
     try {
       const res = await fetch(`https://api.lyrics.ovh/v1/${artist}/${song}`);
-      if (!res.ok) throw new Error("Şarkı sözü bulunamadı.");
+      if (!res.ok)
+        throw new Error(
+          "Üzgünüz, bu şarkının sözleri bulunamadı.\nLütfen sanatçı ve şarkı adını kontrol edin."
+        );
       const data = await res.json();
       setLyrics(data.lyrics);
     } catch (err: unknown) {

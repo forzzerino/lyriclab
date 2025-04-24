@@ -1,54 +1,65 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="public/readmelogo.png" alt="LyricLab Logo" width="800"/>
+</p>
+<h3 align="center">🎵 Minimal bir şarkı sözü arama uygulaması 🎵</h3>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 📘 Proje Hakkında
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**LyricLab**, kullanıcıların favori şarkılarının sözlerini kolayca bulmalarını sağlayan sade ve temiz bir web uygulamasıdır. <br/> Hızlı ve kullanıcı dostu bir arayüz sunar. <br/> Uygulama React, Vite ve TypeScript gibi modern teknolojilerle geliştirilmiştir. Tüm şarkı sözleri [Lyrics.ovh API](https://lyricsovh.docs.apiary.io/#) üzerinden alınmaktadır.
 
-## Expanding the ESLint configuration
+## 🚀 Özellikler
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔍 Şarkı ismi ve sanatçı adına göre şarkı sözü arama  
+- 🎧 Gerçek zamanlı şarkı sözü sonuçları  
+- 🌑 Varsayılan olarak karanlık tema  
+- ⚡ Vite sayesinde hızlı geliştirme ortamı  
+- 🎨 Tailwind CSS ve ShadCN ile özel arayüz tasarımı  
+- 🧼 Minimal ve mobil uyumlu tasarım  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Kullanılan Teknolojiler
+
+| Teknoloji       | Açıklama                                | Bağlantı                                    |
+|-----------------|------------------------------------------|---------------------------------------------|
+| React           | JavaScript arayüz kütüphanesi            | [reactjs.org](https://reactjs.org/)         |
+| ShadCN UI       | Tailwind ile oluşturulmuş UI bileşenleri | [shadcn.dev](https://ui.shadcn.dev/)        |
+| Aceternity UI   | Efektli, hazır UI bileşenleri            | [aceternity.com](https://ui.aceternity.com) |
+| Reactbits       | React için UI yapı taşları               | [reactbits.dev](https://www.reactbits.dev)  |
+| Radix UI        | Erişilebilir, stil verilmemiş bileşenler | [radix-ui.com](https://www.radix-ui.com/)   |
+| Motion          | Framer Motion animasyon kütüphanesi      | [motion.dev](https://motion.dev)            |
+| Lyrics.ovh API  | Şarkı sözü veritabanı                    | [lyrics.ovh](https://lyricsovh.docs.apiary.io/#) |
+
+## 📁 Klasör Yapısı
+```bash
+src/
+│
+├── components/      # Arayüz bileşenleri 
+├── pages/           # Sayfalar 
+├── assets/          # İkonlar, görseller
+└── App.tsx          # Ana bileşen
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Kurulum
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Projeyi local olarak çalıştırmak için:
+
+```bash
+git clone https://github.com/forzzerino/lyriclab.git
+cd lyriclab
+npm install
+npm run dev
 ```
+
+
+## 🧩 Gelecek Güncellemeler:
+📝 Şarkı sözlerini indirme ve görsel olarak kaydetme özelliği
+
+🔁 Arama geçmişi
+
+🎤 Sanatçı, albüm veya sadece başlığa göre arama
+
+
+---
+[Can Öztürk](https://github.com/forzzerino) tarafından ☕ ile geliştirildi.

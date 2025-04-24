@@ -1,13 +1,20 @@
 <p align="center">
-  <img src="public/readmelogo.png" alt="LyricLab Logo" width="800"/>
+  <a href="https://forzzerino.github.io/lyriclab/" target="_blank">
+    <img src="public/readmelogo.png" alt="LyricLab Logo" width="800"/>
+  </a>
 </p>
 <h3 align="center">🎵 Minimal bir şarkı sözü arama uygulaması 🎵</h3>
 
----
+## ➡️ LyricLab'a Git
+
+### [LyricLab](https://forzzerino.github.io/lyriclab/)
+
+
 
 ## 📘 Proje Hakkında
 
 **LyricLab**, kullanıcıların favori şarkılarının sözlerini kolayca bulmalarını sağlayan sade ve temiz bir web uygulamasıdır. <br/> Hızlı ve kullanıcı dostu bir arayüz sunar. <br/> Uygulama React, Vite ve TypeScript gibi modern teknolojilerle geliştirilmiştir. Tüm şarkı sözleri [Lyrics.ovh API](https://lyricsovh.docs.apiary.io/#) üzerinden alınmaktadır.
+
 
 ## 🚀 Özellikler
 
